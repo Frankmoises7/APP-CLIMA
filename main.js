@@ -15,7 +15,7 @@ const windOutput = document.querySelector('.wind')
 const form = document.getElementById('location-input')
 const btn = document.querySelector('.submit')
 const cities = document.querySelectorAll('.city')
-const baseUrl = " http://api.weatherapi.com/v1/current.json?"
+const baseUrl = " https://api.weatherapi.com/v1/current.json?"
 const apikey = "key=511483f5c6bd41aa9cb72758221007&q="
 
 
