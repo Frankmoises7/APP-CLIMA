@@ -13,6 +13,7 @@ const cloudOutput = document.querySelector('.cloud')
 const humidityOutput = document.querySelector('.humidity')
 const windOutput = document.querySelector('.wind')
 const form = document.getElementById('location-input')
+const search = document.querySelector('.search')
 const btn = document.querySelector('.submit')
 const cities = document.querySelectorAll('.city')
 const baseUrl = " https://api.weatherapi.com/v1/current.json?"
@@ -37,10 +38,11 @@ cities.forEach((city) => {
   })
 });
 
+
 //Agregando el evento 'submit' del formulario
 form.addEventListener('submit', (e) => {
   //Si el input (barra de busqueda) esta vacio, enviara una alerta
-  if (search.value.length === 0) {
+  if (search.value.length == 0) {
     alert('Please type in a city name')
   } else {
     //Cambia la ciudad default por la ciudad escrita en el input
