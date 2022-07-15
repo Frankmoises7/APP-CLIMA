@@ -11,6 +11,9 @@ body {
 h1, h3 {
   font-weight: 400;
 }
+img {
+  max-width: 100vh;
+}
 
 .weather-app {
   min-height: 100vh;
